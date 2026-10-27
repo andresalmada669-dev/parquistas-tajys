@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Servicios de Jardinería y Piletas</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #101510;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #080b08;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            border-bottom: 2px solid #38b44a;
+        }
+
+        header h2 {
+            color: #4ade60;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+        }
+
+        nav a:hover {
+            color: #4ade60;
+        }
+
+        .portada {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #101510, #18351e);
+        }
+
+        .portada h1 {
+            font-size: 42px;
+            color: #4ade60;
+            margin-bottom: 20px;
+        }
+
+        .portada p {
+            font-size: 19px;
+            max-width: 650px;
+            margin: 0 auto 28px;
+            color: #dddddd;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #25d366;
+            color: #071b0b;
+            padding: 13px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .boton:hover {
+            background-color: #4ade60;
+        }
+
+        .servicios {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        .servicios h2 {
+            font-size: 32px;
+            color: #4ade60;
+            margin-bottom: 12px;
+        }
+
+        .descripcion {
+            color: #cccccc;
+            margin-bottom: 35px;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .tarjeta {
+            background-color: #1b241c;
+            padding: 30px 22px;
+            border-radius: 14px;
+            border: 1px solid #344735;
+            transition: transform 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-7px);
+            border-color: #4ade60;
+        }
+
+        .icono {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        .tarjeta h3 {
+            color: #4ade60;
+            margin-bottom: 12px;
+        }
+
+        .tarjeta p {
+            color: #dddddd;
+        }
+
+        .nosotros {
+            background-color: #18251a;
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .nosotros h2 {
+            color: #4ade60;
+            font-size: 30px;
+            margin-bottom: 18px;
+        }
+
+        .nosotros p {
+            max-width: 750px;
+            margin: auto;
+            color: #dddddd;
+        }
+
+        .contacto {
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .contacto h2 {
+            color: #4ade60;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #080b08;
+            padding: 22px;
+            color: #aaaaaa;
+            border-top: 1px solid #344735;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .portada h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<body>
+
+    <header>
+        <h2>🌿 PARQUISTA TAJY </h2>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="portada" id="inicio">
+        <h1>¡CUIDAMOS TUS ESPACIOS!</h1>
+
+        <p>
+            Expertos en podas, parquizado y mantenimiento
+            de piletas. Trabajamos para que tu jardín
+            y tus espacios luzcan siempre impecables.
+        </p>
+
+        <img src="parque.jpeg" alt="parque.jpeg" style="width: 100%; max-width: 500px; height: auto;">
+        <br>
+        <img src="pileta.jpeg" alt="pileta.jpeg" style="width: 100%; max-width: 500px; height: auto;">
+        <br>
+        <img src="poda.jpg" alt="poda.jpg"  style="width: 100%; max-width: 500px; height: auto;">
+        <br>
+
+
+        <a href="#servicios" class="boton">
+            CONOCÉ NUESTROS SERVICIOS
+        </a>
+    </section>
+
+    <section class="servicios" id="servicios">
+
+        <h2>NUESTROS SERVICIOS</h2>
+
+        <p class="descripcion">
+            Soluciones para tu jardín y tu pileta.
+        </p>
+
+        <div class="contenedor">
+
+            <div class="tarjeta">
+                <div class="icono">🌳</div>
+                <h3>PODAS</h3>
+                <p>
+                    Poda de árboles, arbustos y plantas
+                    para mantener tus espacios verdes
+                    prolijos y cuidados.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="icono">🌱</div>
+                <h3>PARQUIZADO</h3>
+                <p>
+                    Corte de césped, mantenimiento
+                    de jardines y cuidado de espacios
+                    verdes para tu hogar.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <div class="icono">🏊</div>
+                <h3>PILE­TAS</h3>
+                <p>
+                    Limpieza y mantenimiento de piletas
+                    para que puedas disfrutar del agua
+                    en buenas condiciones.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="nosotros">
+        <h2>¿POR QUÉ ELEGIRNOS?</h2>
+
+        <p>
+            Nos comprometemos con cada trabajo,
+            brindando atención personalizada,
+            responsabilidad y dedicación.
+            Nuestro objetivo es que quedes conforme
+            y disfrutes de tus espacios como te merecés.
+        </p>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>¡PEDÍ TU PRESUPUESTO!</h2>
+
+        <p>
+            Contactanos para consultar por nuestros
+            servicios de podas, parquizado y piletas.
+        </p>
+
+        <!-- Reemplazá el número por tu WhatsApp -->
+        <a
+            href="https://wa.me/541145262973"
+            class="boton"
+            target="_blank"
+            rel="noopener noreferrer">
+            HABLAR POR WHATSAPP
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 VERDE & AGUA - Todos los derechos reservados.</p>
+        <p>Cuidamos tus espacios, mejoramos tu hogar. 🌿</p>
+    </footer>
+
+</body>
+</html>
